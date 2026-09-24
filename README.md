@@ -1,6 +1,14 @@
-# Quantum Intelligence Learning Lab (Eureka Forge)
+﻿# Quantum Intelligence Learning Lab (Eureka Forge)
 
-> **SIH26140 — AI-Based Interactive Quantum Algorithm Learning Platform**  
+## 🚀 Live Deployment
+
+| Service | URL | Status |
+|---|---|---|
+| **Frontend (Vercel)** | [eureka-forge.vercel.app](https://eureka-forge.vercel.app) | ✅ Live |
+| **Backend (Render)** | [eureka-forge-api.onrender.com](https://eureka-forge-api.onrender.com) | 🔄 Deploying |
+| **GitHub Repo** | [Omkar-ai-wed/eureka-forge](https://github.com/Omkar-ai-wed/eureka-forge) | ✅ Live |
+
+> **SIH26140 â€” AI-Based Interactive Quantum Algorithm Learning Platform**  
 > *Core Principle: "Simulator computes. Everything else reads."*
 
 ---
@@ -16,7 +24,7 @@ $$\text{Predict} \longrightarrow \text{Build} \longrightarrow \text{Simulate} \l
 ## Key Architecture & Core Rules
 
 1. **Simulator is the Source of Quantum Truth:** All statevectors, unitary transformations, and measurement probabilities are computed strictly by **Qiskit Aer** (`qiskit-aer`). The LLM **never** calculates or overrides quantum numbers.
-2. **Deterministic Misconception Detection:** Discrepancies between predictions and simulation results trigger mathematical rules (M1–M4), not probabilistic AI guesses.
+2. **Deterministic Misconception Detection:** Discrepancies between predictions and simulation results trigger mathematical rules (M1â€“M4), not probabilistic AI guesses.
 3. **Grounded AI Tutoring:** The conversational tutor is strictly grounded on the exact Aer shot counts, comparison deltas, and detected misconception IDs.
 4. **Visual Remediation ("Show Me Why"):** Contextual animations and Bloch sphere diagrams provide instant geometric clarification when numerical mismatches occur.
 5. **Measurable Mastery:** Mastery advancement (*Learning* $\to$ *Practicing* $\to$ *Mastered*) is derived mathematically from challenge submissions and prediction accuracy.
@@ -92,7 +100,7 @@ npm run build
 ## Supported Test Circuits
 
 ### 1. Quantum Superposition ($H|0\rangle$)
-- **Circuit:** `q0: ──H────M`
+- **Circuit:** `q0: â”€â”€Hâ”€â”€â”€â”€M`
 - **Theoretical State:** $|\psi\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}}$
 - **Bloch Coordinates:** Equatorial rotation $(\theta = \pi/2, \phi = 0)$ along $+X$.
 - **Ideal Probabilities:** $P(0) \approx 50\%, P(1) \approx 50\%$ (verified with $\pm 15\%$ stochastic tolerance).
@@ -100,16 +108,16 @@ npm run build
 ### 2. Quantum Entanglement (Bell State $|\Phi^+\rangle$)
 - **Circuit:**
   ```text
-  q0: ──H────●────M
-             │
-  q1: ───────⊕────M
+  q0: â”€â”€Hâ”€â”€â”€â”€â—â”€â”€â”€â”€M
+             â”‚
+  q1: â”€â”€â”€â”€â”€â”€â”€âŠ•â”€â”€â”€â”€M
   ```
 - **Theoretical State:** $|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}$
 - **Ideal Probabilities:** $P(00) \approx 50\%, P(11) \approx 50\%, P(01) = 0\%, P(10) = 0\%$.
 
 ---
 
-## Misconception Engine (Rules M1–M4)
+## Misconception Engine (Rules M1â€“M4)
 
 | Rule ID | Misconception Trigger | Pedagogical Explanation | Remediation |
 | :---: | :--- | :--- | :--- |
@@ -127,9 +135,9 @@ All endpoints are served under `/api/v1`:
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
 | `GET` | `/health` | Returns simulator status, engine version, and backend readiness. |
-| `POST` | `/simulate` | Runs a canonical circuit or concept preset through Qiskit Aer (1–100,000 shots). |
+| `POST` | `/simulate` | Runs a canonical circuit or concept preset through Qiskit Aer (1â€“100,000 shots). |
 | `POST` | `/compare` | Deterministically compares learner prediction against simulator output with tolerance matching. |
-| `POST` | `/diagnose` | Evaluates comparison results against Misconception Rules M1–M4. |
+| `POST` | `/diagnose` | Evaluates comparison results against Misconception Rules M1â€“M4. |
 | `GET` | `/trace` | Returns step-by-step gate execution events and state labels. |
 | `POST` | `/tutor` | Generates a grounded conceptual explanation using execution evidence. |
 | `GET` | `/manim/select` | Returns the appropriate "Show Me Why" video clip and fallback diagram. |
@@ -160,7 +168,7 @@ All endpoints are served under `/api/v1`:
 - **Built (Working in Submitted Prototype):**
   - Qiskit Aer shot-based simulation engine.
   - Interactive Next.js circuit canvas & 3D SVG Bloch sphere.
-  - Deterministic prediction comparison & misconception engine (M1–M4).
+  - Deterministic prediction comparison & misconception engine (M1â€“M4).
   - Simulator-grounded AI tutor layer with offline fallback.
   - Pre-rendered Manim "Show Me Why" selector & visual diagram fallbacks.
   - Quantitative mastery tracking and adaptive challenges.
@@ -176,4 +184,5 @@ All endpoints are served under `/api/v1`:
 
 ## License
 
-Developed for the Smart India Hackathon (SIH 2026) — Problem Statement **SIH26140**.
+Developed for the Smart India Hackathon (SIH 2026) â€” Problem Statement **SIH26140**.
+
