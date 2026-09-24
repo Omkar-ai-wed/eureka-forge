@@ -5,7 +5,7 @@
 | Service | URL | Status |
 |---|---|---|
 | **Frontend (Vercel)** | [eureka-forge.vercel.app](https://eureka-forge.vercel.app) | ✅ Live |
-| **Backend (Render)** | [eureka-forge-api.onrender.com](https://eureka-forge-api.onrender.com) | 🔄 Deploying |
+| **Backend (Render)** | [eureka-forge-api.onrender.com](https://eureka-forge-api.onrender.com) | ✅ Live |
 | **GitHub Repo** | [Omkar-ai-wed/eureka-forge](https://github.com/Omkar-ai-wed/eureka-forge) | ✅ Live |
 
 > **SIH26140 â€” AI-Based Interactive Quantum Algorithm Learning Platform**  
@@ -185,4 +185,5 @@ All endpoints are served under `/api/v1`:
 ## License
 
 Developed for the Smart India Hackathon (SIH 2026) â€” Problem Statement **SIH26140**.
+
 

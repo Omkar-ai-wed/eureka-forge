@@ -1,4 +1,4 @@
-import {
+﻿import {
   SimulationResult,
   TutorRequest,
   TutorResponse,
@@ -12,7 +12,7 @@ import {
   ConceptName,
 } from '../types/quantum';
 
-const BASE = 'http://127.0.0.1:8000/api/v1';
+const BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'https://eureka-forge-api.onrender.com') + '/api/v1';
 
 async function fetchJson<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(url, {
@@ -73,3 +73,4 @@ export async function submitAnswer(req: SubmitAnswerRequest): Promise<SubmitAnsw
 export async function getMastery(): Promise<MasteryMap> {
   return fetchJson<MasteryMap>(`${BASE}/mastery`);
 }
+
